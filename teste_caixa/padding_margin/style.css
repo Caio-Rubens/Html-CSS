@@ -1,0 +1,30 @@
+body {
+    background-color: bisque;
+}
+
+/* Com padding e sem margin */
+/* Padding é o espaço de dentro da div */
+.conteiner1 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+/* Sem padding e com margin */
+/* Margin é o espaço de fora da div */
+.conteiner2 {
+    background-color:darkgoldenrod;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* Com padding e com margin */
+.conteiner3 {
+    background-color:rgb(255, 185, 236);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}

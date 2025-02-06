@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Corpo da imagem */
+body {
+    background-image: url(../imagens/tree-road2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: no-repeat;
+}   
+
+/* Bloacão trasparente */
+.conteiner-fundo {
+    background-color: rgba(133, 133, 133, 0.5);
+    position: absolute;
+    z-index: -1;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid;
+    border-width: 1px;
+}
+
+/* Conteiner pai */
+.conteiner-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+}
+
+/* Imagem profile */
+.conteiner-logo {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 100px;
+}
+
+/* Texto login */
+.conteiner-login-text {
+    width: 300px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.conteiner-login-text h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 300px;
+}
+
+/* Conteiner das caixas de texto */
+.conteiner-input {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-msg {
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+.label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+/* Área do pai linha?*/
+.conteiner-linha {
+    display: flex;
+    flex-direction:column;
+    width: 300px;
+}
+
+/* Área do checbox*/
+.conteiner-checkbox {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 10px 0 10px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.conteiner-checkbox label {
+   margin-left: 10px;
+   color: white;
+}
+
+/* Area do botão */
+.conteiner-logar {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+
+/* Botão de login */
+.butao {
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+}
+
+/* Area do OU */
+.conteiner-separador {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Área de outro logins */
+.formas-de-login {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 15px 0;
+}
+
+.formas-de-login button{
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    color: white;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner-google button{
+    background-color: red;
+}
+
+.conteiner-facebook button{
+    background-color: rgb(98, 98, 255);
+}
+
+/* Links de ajuda */
+.nav-links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: white;
+}

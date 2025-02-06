@@ -1,0 +1,76 @@
+body {
+    background-image: url(../longin-cru/water.gif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteiner-maior {
+    background-color:rgba(35, 149, 140, 0.6);
+    width: 700px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    padding-top: 45px;
+    border-radius: 20px;
+}
+
+.conteiner-login {
+    background-color:rgb(54, 164, 160);
+    width: 650px;
+    height: 220px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.conteiner-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+h1 {
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+input {
+    margin: 10px;
+    height: 30px;
+    width: 600px;
+    border-radius: 20px;
+    border: none;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+button {
+
+    margin-top: 15px;
+    width: 605px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Cru</title>
+</head>
+<body>
+    <!-- Não é necessário usar uma div para fazer um fundo, dá para usa a grade de cores que contém alfa ex. rgba na conteiner-pai, é mais eficiente -->
+    <div class="conteiner-fundo"></div>
+    <div class="conteiner-pai">
+        <div class="conteiner-logo">
+            <img src="../imagens/profile2.png" alt="">
+        </div>
+        <div class="conteiner-login-text">
+            <h2>Faça seu login</h2>
+        </div>
+        <form>
+            <div class="conteiner-input">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" id="email" class="input-msg" placeholder="Seu e-mail">            
+            </div>
+            <div class="conteiner-input">
+                <label for="senha" class="label">Senha</label>
+                <input type="password" id="senha" class="input-msg" placeholder="Sua senha">
+            </div>
+            <div class="conteiner-linha">
+                <div class="conteiner-checkbox">
+                    <input type="checkbox" class="check-box" id="checkbox">
+                    <label for="checkbox">Lembrar me</label>
+                </div>
+                <div class="conteiner-logar">
+                    <button class="butao">Continuar</button>
+                </div>
+                <div class="conteiner-separador">
+                    <p>- OU -</p>
+                </div>
+                <div class="formas-de-login">
+                    <div class="conteiner-facebook">
+                        <button>Entrar com Facebook</button>
+                    </div>
+                    <div class="conteiner-google">
+                        <button>Entrar com Gmail</button>
+                    </div>
+                </div>
+                <nav class="nav-links">
+                    <p class="password">
+                        <a href="#">Esqueci minha senha</a>
+                    </p>
+                    <p class="email">
+                        <a href="#">Quero me registrar</a>
+                    </p>
+                </nav>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

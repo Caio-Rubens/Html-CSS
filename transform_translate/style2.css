@@ -1,0 +1,20 @@
+/* Não consegui centralizar no meio a div, então coloquei duas div para demontrar o funcionamento do trasnform: translate; */
+
+/* Pra comentar tudo use o ctrl + A, ctrl + ; */
+.conteiner1 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.conteiner2 {
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
