@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video src="video.mp4" autoplay loop muted></video>
+    <header class="nav-conteiner">
+        <div class="nav-bar">
+            <h2 class="titulo-nav-bar">Exercicios</h2>
+            <ul>
+                <li><a href="index3.html">Exercio 1</a></li>
+                <li><a href="index4.html">Exercio 2</a></li>
+                <li><a href="index5.html">Exercio 3</a></li>
+                <li><a href="index6.html">Exercio 4</a></li>
+                <li><a href="index7.html">Exercio 5</a></li>
+                <li><a href="index8.html">Exercio 6</a></li>
+                <li><a href="index9.html">Exercio 7</a></li>
+                <li><a href="index10.html">Exercio 8</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="area-card">
+        <form class="area-form">
+            <div class="area-titulo">
+                <h2 class="titulo-login1">L</h2>
+                <h2 class="titulo-login2">ogin</h2>
+            </div>
+            <div class="area-input">
+                <input type="email" placeholder="E-mail" id="emailUser" maxlength="40" class="inputUser required">
+                <span class="span-conteiner">* E-mail invalido.</span>
+                <input type="password" placeholder="Senha" id="passwordUser" minlength="8" class="inputUser required">
+                <span class="span-conteiner">* Senha invalida.</span>
+            </div>
+            <div class="area-checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Lembrar senha.</label>
+            </div>
+            <input class="button" onclick="butao()" type="submit" value="Continuar">
+        </form>
+    </div>
+    <script>
+        function butao() {
+            let inputEmail = document.getElementById("emailUser").value
+            let inputSenha = document.getElementById("passwordUser").value
+            console.log(inputEmail.length)
+            console.log(inputSenha.length)
+            if (inputEmail.length > 40 || inputEmail.length < 20) {
+                document.getElementById("texto1").innerHTML = "* Email Invalido"
+                document.getElementById("texto1").style.color = "red"
+            
+                if (inputSenha.length < 8 || inputSenha.length > 20) {
+                    document.querySelector("span").style.color = "red"
+                }
+            }
+            else {
+                
+            }
+
+        }
+    </script>
+</body>
+</html>

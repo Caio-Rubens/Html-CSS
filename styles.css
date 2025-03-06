@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(10px);
+}
+
+/* Barra de navegação */
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    gap: 10px;
+    position:fixed;
+    bottom: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+
+.titulo-nav-bar {
+    color: rgb(0, 27, 180);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+a:hover {
+    color: rgb(0, 27, 180);
+    font-size: 20px;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+/* Area de login "atividade" */
+.area-card {
+    height: 60vh;
+    width: 40vw;
+    background-color: rgba(57, 57, 57, 0.45);
+    backdrop-filter: blur(10px);
+    padding: 50px 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 28px 12px 59px -15px rgba(0,0,0,0.52);
+    -moz-box-shadow: 28px 12px 59px -15px rgba(0,0,0,0.52);
+    box-shadow: 28px 12px 59px -15px rgba(2, 61, 255, 0.559);
+    border: 1px solid white;
+}
+
+.area-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 25px; 
+    color: white;
+}
+
+.area-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    gap: 5px;
+}
+
+.titulo-login1 {
+    color: rgb(0, 27, 180);
+    font-size: 100px;
+}
+
+.titulo-login2 {
+    font-size: 50px;    
+}
+
+.texto {
+    font-size: 30px;
+}
+
+.area-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.required {
+    height: 5vh;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.required:hover {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.span-conteiner {
+    font-size: 15px;
+}
+
+.area-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#checkbox {
+    min-height: 20px;
+    min-width: 20px;
+}
+
+.button {
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 27, 180);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 19, 130);
+    color: white;
+}
